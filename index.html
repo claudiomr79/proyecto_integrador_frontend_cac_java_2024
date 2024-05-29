@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>X Clothes</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.jpg" alt="Logo de X Clothes" />
+      <h1>X Clothes</h1>
+      <nav>
+        <ul>
+          <li><a href="#product-list">Productos</a></li>
+          <li><a href="#formulario" id="boton">Contacto</a></li>
+          <li><a href="#">Inicie sesion</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Toda la ropa que buscas</h1>
+      <section>
+        <h2>Estss son nuestros productos para vos</h2>
+        <div id="product-list"></div>
+      </section>
+      <section id="nosotros">
+        <h2>Nuestra empresa es la mejor</h2>
+        <p>Hacemos envíos a todo el mundo</p>
+      </section>
+      <section>
+        <div id="formulario" style="display: none">
+          <h2>Contacto</h2>
+          <form>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Mensaje</label>
+            <textarea
+              id="message"
+              name="message"
+              minlength="5"
+              maxlength="100"
+              rows="10"
+              cols="35"
+              required
+            ></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 X Clothes. Todos los derechos reservados.</p>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
