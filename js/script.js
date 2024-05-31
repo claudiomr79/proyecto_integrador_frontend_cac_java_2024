@@ -1,24 +1,3 @@
-const boton = document.getElementById("boton");
-const formulario = document.getElementById("formulario");
-
-boton.addEventListener("click", () => {
-  // Verifica si el formulario está visible
-  if (formulario.style.display === "none") {
-    // Si está oculto lo muestra
-    formulario.style.display = "block";
-  } else {
-    // Si está visible lo oculta
-    formulario.style.display = "none";
-  }
-});
-
-// Cerrar el formulario al pulsar la tecla Escape
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") {
-    formulario.style.display = "none";
-  }
-});
-
 //listado de productos
 fetch("https://fakestoreapi.com/products")
   .then((res) => res.json())
