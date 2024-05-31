@@ -1,51 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon"  href="assets\logo.jpg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/" />
     <!-- hoja de estilos -->
-    <link rel="stylesheet" href="css/log_in.css">
-    
-
-
-
-
+    <link rel="stylesheet" href="css/log_in.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Login</title>
-</head>
-<body>
-    <div class="container">
-                       
-                   
+  </head>
+  <body>
+    <header>
+      <a href="../index.html"
+        ><img src="../assets/logo.jpg" alt="Logo de X Clothes"
+      /></a>
+      <h1>X Clothes</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Productos</a></li>
+          <li><a href="./pages/contacto.html">Contacto</a></li>
+          <li><a href="#">Inicie sesion</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
         <div class="container_form">
-            <img src="assets\logo.jpg" alt="esto es una imagen de fondo">
+          <div id="logo">
+            <img src="./assets/logo.jpg" alt="esto es una imagen de fondo" />
             <h2>Iniciar Sesion</h2>
-            <form id="form" action="">
-              <div >
-                <input autocomplete="off" type="email" placeholder="Email" id="email" name="email">
-                <div class="error-text"> </div>
-                
-              </div>
-                
-              <div>
-                <input type="password" placeholder="Contraseña" id="contraseña" name="contra">
-                <div class="error-text"> </div> 
-                                    
-              </div>
-                 
-
-                 <a href="registrarse.html"> Registrarse </a>
-               <!--  <button type="submit" class="boton"> Iniciar Sesion </button> -->
-                 <input class="boton" type="submit" value="Iniciar Sesion"> 
-                  <p class="advertencia" id="advertencia"></p>
-                  <p class="enviado" id="enviado"></p>
-                  
-            </form>
-            
+          </div>
+          <form id="form" action="">
+            <div>
+              <input
+                autocomplete="off"
+                type="email"
+                placeholder="Email"
+                id="email"
+                name="email"
+              />
+              <div class="error-text"></div>
+            </div>
+            <div>
+              <input
+                type="password"
+                placeholder="Contraseña"
+                id="contraseña"
+                name="contra"
+              />
+              <div class="error-text"></div>
+            </div>
+            <!--  <button type="submit" class="boton"> Iniciar Sesion </button> -->
+            <input class="boton" type="submit" value="Iniciar Sesion" />
+            <a href="./pages/resgistrarse.html"> Registrarse </a>
+            <p class="advertencia" id="advertencia"></p>
+            <p class="enviado" id="enviado"></p>
+          </form>
         </div>
-        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 X Clothes. Todos los derechos reservados.</p>
+    </footer>
 
-        <script src="js/login_validation.js"></script>
-</body>
+    <script src="./js/login_validation.js"></script>
+  </body>
 </html>
